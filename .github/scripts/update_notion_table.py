@@ -40,7 +40,7 @@ def add_row(row):
         "parent": {"database_id": NOTION_DATABASE_ID},
         "properties": {
             "Type": {"title": [{"text": {"content": str(row["Type"])}}]},
-            "Key": {"rich_text": [{"text": {"content": str(row["Key"])}}]},
+            "Code": {"rich_text": [{"text": {"content": str(row["Code"])}}]},
             "Summary": {"rich_text": [{"text": {"content": str(row["Summary"])}}]},
             "Detail": {"rich_text": [{"text": {"content": str(row["Detail"])}}]}
         }
