@@ -12,7 +12,7 @@
     "Warning": {},
     "Error": {
       "E401": {
-        "Summary": "Error 1",
+        "Summary": "Error",
         "Detail": "Not found"
       },
       "E500": {
