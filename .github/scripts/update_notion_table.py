@@ -15,12 +15,21 @@ headers = {
 def clear_database():
     query_url = f"https://api.notion.com/v1/databases/{NOTION_DATABASE_ID}/query"
     pages = []
+
     while True:
         res = requests.post(query_url, headers=headers, json={})
+        if not res.ok:
+            print("❌ Failed to query Notion database:")
+            print("Status:", res.status_code)
+            print("Response:", res.text)
+            res.raise_for_status()
+
         data = res.json()
-        pages.extend(data["results"])
+        pages.extend(data.get("results", []))
+
         if not data.get("has_more"):
             break
+
     for page in pages:
         del_url = f"https://api.notion.com/v1/pages/{page['id']}"
         requests.patch(del_url, headers=headers, json={"archived": True})
