@@ -1,6 +1,6 @@
 {
   "Config": {
-    "Debug": false
+    "Active": "Active"
   },
   "SystemNotifications": {
     "Success": {

@@ -1,5 +1,15 @@
 {
   "Config": {
-    "Debug": false
+    "Active": "Aktiv"
+  },
+  "SystemNotifications": {
+    "Success": {
+      "S100": "Endringene er lagret"
+    },
+    "Warning": {},
+    "Error": {
+      "E401": "Ikke funnet",
+      "E500": "Intern serverfeil"
+    }
   }
 }
