@@ -1,0 +1,15 @@
+{
+  "Config": {
+    "Debug": false
+  },
+  "SystemNotifications": {
+    "Success": {
+      "S100": "Changes saved successfully"
+    },
+    "Warning": {},
+    "Error": {
+      "E401": "Not found",
+      "E500": "Internal server error"
+    }
+  }
+}
