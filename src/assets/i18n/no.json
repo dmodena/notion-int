@@ -4,12 +4,21 @@
   },
   "SystemNotifications": {
     "Success": {
-      "S100": "Endringene er lagret"
+      "S100": {
+        "Summary": "Suksess",
+        "Detail": "Endringene er lagret"
+      }
     },
     "Warning": {},
     "Error": {
-      "E401": "Ikke funnet",
-      "E500": "Intern serverfeil"
+      "E401": {
+        "Summary": "Feil",
+        "Detail": "Ikke funnet"
+      },
+      "E500": {
+        "Summary": "Feil",
+        "Detail": "Intern serverfeil"
+      }
     }
   }
 }

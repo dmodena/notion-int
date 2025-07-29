@@ -4,12 +4,21 @@
   },
   "SystemNotifications": {
     "Success": {
-      "S100": "Changes saved successfully"
+      "S100": {
+        "Summary": "Success",
+        "Detail": "Changes saved successfully"
+      }
     },
     "Warning": {},
     "Error": {
-      "E401": "Not found",
-      "E500": "Internal server error"
+      "E401": {
+        "Summary": "Error",
+        "Detail": "Not found"
+      },
+      "E500": {
+        "Summary": "Error",
+        "Detail": "Internal server error"
+      }
     }
   }
 }
