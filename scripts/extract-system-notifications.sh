@@ -34,6 +34,8 @@ process_language_file() {
 
   echo "Processing $languge file..."
 
+  echo "Type,Code,Summary,Detail" > "$output_file"
+
   jq -r '
   .SystemNotifications |
   to_entries[] |
