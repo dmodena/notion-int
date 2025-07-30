@@ -15,6 +15,10 @@
         "Summary": "Error",
         "Detail": "Not found"
       },
+      "E404": {
+        "Summary": "Error",
+        "Detail": "Not found"
+      },
       "E500": {
         "Summary": "Error",
         "Detail": "Internal server error"

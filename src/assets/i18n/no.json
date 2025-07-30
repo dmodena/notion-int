@@ -15,6 +15,10 @@
         "Summary": "Feil",
         "Detail": "Ikke funnet"
       },
+      "E404": {
+        "Summary": "Feil",
+        "Detail": "Ikke funnet"
+      },
       "E500": {
         "Summary": "Feil",
         "Detail": "Intern serverfeil"
