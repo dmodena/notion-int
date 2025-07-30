@@ -21,7 +21,7 @@
       },
       "E500": {
         "Summary": "Error",
-        "Detail": "Internal server error"
+        "Detail": "Internal server errorX"
       }
     }
   }
