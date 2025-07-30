@@ -30,5 +30,6 @@ jobs:
       - name: Update Notion table from CSV
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          EN_NOTION_DATABASE_ID: ${{ secrets.EN_NOTION_DATABASE_ID }}
+          NO_NOTION_DATABASE_ID: ${{ secrets.NO_NOTION_DATABASE_ID }}
         run: pushd scripts && python update_notion_table.py
