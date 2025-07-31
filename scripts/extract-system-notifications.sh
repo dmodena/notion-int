@@ -43,6 +43,7 @@ process_language_file() {
   .key as $type |
   .value |
   to_entries[] |
+  select(.key != "Parameters") |
   [$type, .key, .value.Summary, .value.Detail] |
   @csv
   ' "$input_file" >> "$output_file"
