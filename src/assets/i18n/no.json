@@ -6,7 +6,7 @@
     "Success": {
       "S100": {
         "Summary": "Suksess",
-        "Detail": "Endringene er lagret"
+        "Detail": "Lagret {{object}}"
       }
     },
     "Warning": {},
@@ -23,6 +23,9 @@
         "Summary": "Feil",
         "Detail": "Intern serverfeil"
       }
+    },
+    "Parameters": {
+      "ProjectOptions": "prosjektopsjoner"
     }
   }
 }

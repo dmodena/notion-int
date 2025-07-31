@@ -6,7 +6,7 @@
     "Success": {
       "S100": {
         "Summary": "Success",
-        "Detail": "Changes saved successfully"
+        "Detail": "Changes saved for {{object}}"
       }
     },
     "Warning": {},
@@ -21,8 +21,11 @@
       },
       "E500": {
         "Summary": "Error",
-        "Detail": "Internal server errorX"
+        "Detail": "Internal server error"
       }
+    },
+    "Parameters": {
+      "ProjectOptions": "project options"
     }
   }
 }
