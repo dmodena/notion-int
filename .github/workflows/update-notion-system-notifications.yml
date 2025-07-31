@@ -18,18 +18,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install tools
-        run: sudo apt-get update && sudo apt-get install -y jq python3-pip
-
-      - name: Run CSV extraction script
-        run: bash scripts/extract-system-notifications.sh
-
       - name: Install Python dependencies
         run: pip install pandas requests
 
-      - name: Update Notion table from CSV
+      - name: Extract system notifications to CSV
+        run: python scripts/extract-system-notifications.py
+
+      - name: Update Notion tables from CSVs
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-          EN_NOTION_DATABASE_ID: ${{ secrets.EN_NOTION_DATABASE_ID }}
-          NO_NOTION_DATABASE_ID: ${{ secrets.NO_NOTION_DATABASE_ID }}
-        run: pushd scripts && python update_notion_table.py
+          NOTION_NOTIF_DB_ID: ${{ secrets.NOTION_NOTIF_DB_ID }}
+          NOTION_PARAMS_DB_ID: ${{ secrets.NOTION_PARAMS_DB_ID }}
+        run: python scripts/update_notion_table.py
