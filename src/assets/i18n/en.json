@@ -25,6 +25,7 @@
       }
     },
     "Parameters": {
+      "License": "license",
       "ProjectOptions": "project options"
     }
   }
